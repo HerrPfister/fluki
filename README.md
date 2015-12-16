@@ -27,7 +27,7 @@ var randomString = fluky.string(x)
 var randomInteger = fluky.integer()
 
 //Random integer in between two numbers
-var randomInteger = fluky.string(min, max)
+var randomInteger = fluky.integer(min, max)
 ```
 ## License
 
