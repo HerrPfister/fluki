@@ -1,4 +1,4 @@
-# fluky [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# fluky [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Library for generating random variables of all types for testing.
 
 ## Installation
@@ -7,12 +7,27 @@
 $ npm install --save fluky
 ```
 
-## Usage
+## Include in project
 
 ```js
 var fluky = require('fluky');
+```
 
-fluky('Rainbow');
+## Generate a random string
+```js
+//Default
+var randomString = fluky.string()
+
+//Random string with a specific length x
+var randomString = fluky.string(x)
+```
+## Generate a random integer
+```js
+//Default
+var randomInteger = fluky.integer()
+
+//Random integer in between two numbers
+var randomInteger = fluky.string(min, max)
 ```
 ## License
 
