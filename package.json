@@ -1,5 +1,5 @@
 {
-  "name": "fluky",
+  "name": "fluki",
   "version": "1.0.0",
   "description": "Library for generating random variables of all types for testing.",
   "homepage": "",
@@ -13,7 +13,7 @@
   ],
   "main": "dist/index.js",
   "keywords": [],
-  "repository": "git@github.com:HerrPfister/fluky.git",
+  "repository": "git@github.com:HerrPfister/fluki.git",
   "devDependencies": {
     "babel-core": "^5.5.0",
     "chai": "^3.4.1",

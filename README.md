@@ -1,42 +1,42 @@
-# fluky [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# fluki [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Library for generating random variables of all types for testing.
 
 ## Installation
 
 ```sh
-$ npm install --save fluky
+$ npm install --save fluki
 ```
 
 ## Include in project
 
 ```js
-var fluky = require('fluky');
+var fluki = require('fluki');
 ```
 
 ## Generate a random string
 ```js
 //Default
-var randomString = fluky.string()
+var randomString = fluki.string()
 
 //Random string with a specific length x
-var randomString = fluky.string(x)
+var randomString = fluki.string(x)
 ```
 ## Generate a random integer
 ```js
 //Default
-var randomInteger = fluky.integer()
+var randomInteger = fluki.integer()
 
 //Random integer in between two numbers
-var randomInteger = fluky.integer(min, max)
+var randomInteger = fluki.integer(min, max)
 ```
 ## License
 
 MIT © [Matthew Pfister]()
 
 
-[npm-image]: https://badge.fury.io/js/fluky.svg
-[npm-url]: https://npmjs.org/package/fluky
-[travis-image]: https://travis-ci.org/HerrPfister/fluky.svg?branch=master
-[travis-url]: https://travis-ci.org/HerrPfister/fluky
-[daviddm-image]: https://david-dm.org/HerrPfister/fluky.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/HerrPfister/fluky
+[npm-image]: https://badge.fury.io/js/fluki.svg
+[npm-url]: https://npmjs.org/package/fluki
+[travis-image]: https://travis-ci.org/HerrPfister/fluki.svg?branch=master
+[travis-url]: https://travis-ci.org/HerrPfister/fluki
+[daviddm-image]: https://david-dm.org/HerrPfister/fluki.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/HerrPfister/fluki

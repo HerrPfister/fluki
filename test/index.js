@@ -1,13 +1,13 @@
-import fluky from '../lib';
+import fluki from '../lib';
 import {expect} from 'chai';
 
-describe('fluky', function () {
+describe('fluki', function () {
     describe('string', function () {
         let randomString;
 
         describe('default', function () {
             beforeEach(function () {
-                randomString = fluky.string();
+                randomString = fluki.string();
             });
 
             it('should return a random string', function () {
@@ -20,7 +20,7 @@ describe('fluky', function () {
 
             beforeEach(function () {
                 stringSize = Math.floor(Math.random() * (10 - 5) + 5);
-                randomString = fluky.string(stringSize);
+                randomString = fluki.string(stringSize);
             });
 
             it('should return a random string of specific size', function () {
@@ -35,7 +35,7 @@ describe('fluky', function () {
             let randomInteger;
 
             beforeEach(function () {
-                randomInteger = fluky.integer();
+                randomInteger = fluki.integer();
             });
 
             it('should return a random integer from 0 to 100', function () {
@@ -51,7 +51,7 @@ describe('fluky', function () {
                 min = Math.floor(Math.random() * 100);
                 max = Math.floor(Math.random() * ((min + 100) - min) + min;
 
-                randomInteger = fluky.integer(min, max);
+                randomInteger = fluki.integer(min, max);
             });
 
             it('should return a random integer in between the provided values', function () {
