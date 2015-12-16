@@ -1,6 +1,6 @@
 {
   "name": "fluky",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Library for generating random variables of all types for testing.",
   "homepage": "",
   "author": {
