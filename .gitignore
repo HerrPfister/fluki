@@ -1,0 +1,10 @@
+.# file #
+########
+
+
+# dir #
+#######
+.idea/
+node_modules/
+coverage/
+dist/
