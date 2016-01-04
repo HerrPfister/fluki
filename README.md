@@ -16,19 +16,39 @@ var fluki = require('fluki');
 ## Generate a random string
 ```js
 //Default
-var randomString = fluki.string()
+fluki.string()
 
 //Random string with a specific length x
-var randomString = fluki.string(x)
+fluki.string(x)
 ```
 ## Generate a random integer
 ```js
 //Default
-var randomInteger = fluki.integer()
+fluki.integer()
 
-//Random integer in between two numbers
-var randomInteger = fluki.integer(min, max)
+//Random integer between min and max
+fluki.integer(min, max)
 ```
+
+## Generate a random array
+```js
+//Default
+fluki.array()
+
+//Random array of x strings, integers, or objects
+fluki.array(x, "strings|integers|objects")
+```
+
+## Generate a random object
+
+```js
+//Default
+fluki.object()
+
+//Random object with x random key-value pairs
+fluki.object(x)
+```
+
 ## License
 
 MIT © [Matthew Pfister]()
