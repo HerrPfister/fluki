@@ -36,7 +36,7 @@ fluki.integer(min, max)
 fluki.array()
 
 //Random array of x strings, integers, or objects
-fluki.array(x, "strings|integers|objects")
+fluki.array(x, "string|str|integer|int|object|obj")
 ```
 
 ## Generate a random object
