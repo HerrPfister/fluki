@@ -4,6 +4,31 @@ var fluki = require('../dist/index'),
     expect = require('chai').expect;
 
 describe('fluki', function () {
+    describe('date', function () {
+        describe('default', function () {
+            var dateString,
+                todaysDateString;
+
+            function buildDateString(date) {
+                var monthString = (date.getMonth() + 1),
+                    dateString = date.getDate();
+
+                dateString = dateString < 10 ? '0' + dateString : dateString;
+                monthString = monthString < 10 ? '0' + monthString : monthString;
+
+                return monthString + '/' + dateString + '/' + date.getFullYear();
+            }
+
+            beforeEach(function () {
+                todaysDateString = buildDateString(new Date());
+                dateString = fluki.date();
+            });
+
+            it('should return a date', function () {
+                expect(dateString).to.be.equal(todaysDateString);
+            });
+        });
+    });
 
     describe('string', function () {
         var randomString;
@@ -44,9 +69,9 @@ describe('fluki', function () {
                 randomInteger = fluki.integer();
             });
 
-            it('should return a random integer from 1 to 100', function () {
-                expect(randomInteger).to.be.least(1);
-                expect(randomInteger).to.be.most(100);
+            it('should return a random integer in between 0 and 100', function () {
+                expect(randomInteger).to.be.at.least(1);
+                expect(randomInteger).to.be.below(100);
             });
         });
 
@@ -60,8 +85,8 @@ describe('fluki', function () {
             });
 
             it('should return a random integer in between the provided values', function () {
-                expect(randomInteger).to.be.least(min);
-                expect(randomInteger).to.be.most(max);
+                expect(randomInteger).to.be.at.least(min);
+                expect(randomInteger).to.be.below(max);
             });
         });
 
